@@ -21,16 +21,4 @@ if( $conn ) {
 }
 
 
-        ?>
-       
-                     
-                                  <?php
-$reporte3 = "exec SP_ListaPasajeroEspera ";          
-$queryreporte3 = sqlsrv_query( $conn, $reporte3);
- while( $row = sqlsrv_fetch_array( $queryreporte3, SQLSRV_FETCH_BOTH ) ){
-echo 'ddd-'.$row['Pasajero'];
-
- }
- 
- ?> 
-                    
+        ?>             
