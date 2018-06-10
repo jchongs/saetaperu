@@ -6,7 +6,7 @@ echo phpinfo();
 $serverName = "saetaserver.database.windows.net";
 $connectionOptions = array(
     "Database" => "dbSaeta",
-    "Uid" => "adminsaeta@saetaserver",
+    "Uid" => "adminsaeta",
     "PWD" => "...saeta123",
      "CharacterSet" => "UTF-8"
 );
@@ -14,7 +14,7 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 
 if( $conn ) {
-   echo "Conexión estab;ecida.<br />";
+   echo "Conexión estabecida.<br />";
 }else{
      echo "Conexión no se pudo establecer.<br />";
      die( print_r( sqlsrv_errors(), true));
