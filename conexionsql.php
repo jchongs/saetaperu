@@ -1,7 +1,6 @@
 
 <?php
-echo phpinfo();
-//a
+
 
 $serverName = "saetaserver.database.windows.net";
 $connectionOptions = array(
